@@ -1,12 +1,7 @@
-//
-//  AppDelegate.m
-//  March_23_ScrollView
-//
-//  Created by Aditya Narayan on 3/24/15.
-//  Copyright (c) 2015 Aditya Narayan. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
+#import "BaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +11,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.baseViewController = [[BaseViewController alloc] initWithNibName:@"BaseViewController" bundle:nil];
+    //self.navController = [[UINavigationController alloc] initWithRootViewController:self.rootViewController];
+    self.window.rootViewController = self.baseViewController;
+    //self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
