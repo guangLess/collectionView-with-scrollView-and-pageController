@@ -1,3 +1,8 @@
+<img src="./images/iOS Simulator Screen Shot Jul 16, 2015, 5.17.13 PM.png" width = 250>
+<img src="./images/iOS Simulator Screen Shot Jul 16, 2015, 5.17.23 PM.png" width = 250>
+
+
+
 Sample of customized CollectionView: 
 
 customize footer/header
