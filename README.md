@@ -56,5 +56,3 @@ customize footer/header
       }
       return cell;
       }
-
-
